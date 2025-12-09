@@ -128,7 +128,7 @@ main {
   position: relative;
   height: calc(100vh - 80px);
   overflow: hidden;
-
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +171,7 @@ footer a:hover {
 
 .about {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 50px auto 80px auto;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -187,12 +187,13 @@ footer a:hover {
 .about-content {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .about-image {
-  width: 35%;
-  border-radius: 10px;
+  width: 45%;
+  height: auto;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -200,12 +201,10 @@ footer a:hover {
   flex: 1;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #444;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 10px;
+  color: #ddfff7;
+  padding: 20px;
+  background: #2a2a2a;
+  border-radius: 12px;
 }
 
 .about-text p {
@@ -220,13 +219,53 @@ label {
   color: #ddfff7;
 }
 
-input {
-  display: block;
-  margin-bottom: 20px;
+form {
+  background-color: #333;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  color: #ddfff7;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  text-align: left;
+  padding-right: 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #1e1e1e;
+  color: #ddfff7;
+  font-size: 1rem;
 }
 
 #submit {
-  margin-left: 135px;
+  width: 50%;
+  align-self: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #588abb;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#submit:hover {
+  background-color: #4a739b;
 }
 
 #noMansPhoto {
@@ -265,4 +304,18 @@ table td,
 table th {
   padding: 10px 16px;
   text-align: left;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }

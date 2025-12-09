@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <title>Games</title>
     <link rel="stylesheet" href="style.css" />
@@ -14,7 +14,14 @@
       </a>
 
       <nav class="nav-links">
-        <a href="games.html">Games</a>
+        <div class="dropdown">
+          <a href="games.html">Games ▾</a>
+          <div class="dropdown-content">
+            <a href="noMansSky.html">No Man's Sky</a>
+            <a href="geometryDash.html">Geometry Dash</a>
+            <a href="exciteBike.html">ExciteBike</a>
+          </div>
+        </div>
         <a href="contact.html">Contact</a>
         <div class="dropdown">
           <a href="#">Socials ▾</a>
@@ -90,11 +97,13 @@
             </p>
           </div>
           <div id="excite-section">
-            <img
-              src="images/excitebikeBanner.jpg"
-              alt="Excitebike Banner"
-              id="excitePhoto"
-            />
+            <a href="exciteBike.html">
+              <img
+                src="images/excitebikeBanner.jpg"
+                alt="Excitebike Banner"
+                id="excitePhoto"
+              />
+            </a>
             <div class="about-text">
               <p>
                 Excitebike is a classic side-scrolling racing game where you
@@ -109,7 +118,7 @@
     </main>
     <footer>
       property of not me
-      <a href="mailito:owen.oscar.uhl@gmail.com">owen.oscar.uhl@gmail.com</a>
+      <a href="mailto:owen.oscar.uhl@gmail.com">owen.oscar.uhl@gmail.com</a>
     </footer>
   </body>
 </html>
